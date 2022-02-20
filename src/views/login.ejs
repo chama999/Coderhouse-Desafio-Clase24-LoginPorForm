@@ -1,0 +1,21 @@
+<%- include('partials/header'); -%>
+    <div id="#login" class="container mt-dark">
+        <div class="jumbotron">
+            <h1>Bienvenido,
+                <small class="text-muted"> por favor ingrese sus datos</small>
+            </h1>
+            <br>
+            <fieldset>
+            <legend>Login</legend>
+            <div class="form-group">
+                <form action="/login" method="post" autocomplete="off">
+                    <label class="form-label mt-4" for="name">Ingrese su nombre</label>
+                    <div class="form-floating mb-3">
+                      <input class="form-control" type="text" id="name" name="name" placeholder="Nombre de usuario" required/>
+                      <label for="name">Nombre de Usuario</label>
+                    </div>
+                    <button class="btn btn-success mt-3">Enviar</button>
+                </form>
+            </div>
+    </div>
+<%- include('partials/footer'); -%>
